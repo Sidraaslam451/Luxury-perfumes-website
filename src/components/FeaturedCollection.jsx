@@ -6,21 +6,21 @@ const PRODUCTS = [
     name: "Ombre Noire",
     note: "Oud · Amber · Smoke",
     price: "$285",
-    image: "public/images/img7.jpg",
+    image: "/images/img7.jpg",
   },
   {
     id: 2,
     name: "Velours d'Or",
     note: "Vanilla · Sandalwood · Musk",
     price: "$310",
-    image: "public/images/img10.jpg",
+    image: "/images/img10.jpg",
   },
   {
     id: 3,
     name: "Aube Blanche",
     note: "Iris · Jasmine · Cedar",
     price: "$265",
-    image: "public/images/img3.jpg",
+    image: "/images/img3.jpg",
   },
 ];
 
