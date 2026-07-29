@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-noir: #1A0610;
+  --color-charcoal: #2E0F1C;
+  --color-gold: #D9B48F;
+  --color-champagne: #F0DEC0;
+  --color-ivory: #FAF3EC;
+  --color-mist: #B99C97;
+
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-button: 'Montserrat', sans-serif;
+
+  --tracking-widest2: 0.35em;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-noir text-ivory font-body antialiased overflow-x-hidden;
+  }
+  ::selection {
+    @apply bg-gold/30 text-ivory;
+  }
+}
+
+@layer components {
+  .text-gold-gradient {
+    background: linear-gradient(120deg, #F0DEC0 0%, #D9B48F 45%, #A67C52 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(217, 180, 143, 0.2);
+  }
+
+  .eyebrow {
+    @apply font-button text-[11px] tracking-widest2 uppercase text-gold/80;
+  }
+}
