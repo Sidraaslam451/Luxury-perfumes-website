@@ -16,11 +16,15 @@ export default function LuxuryExperience() {
           background:
             "radial-gradient(ellipse at 20% 80%, rgba(217,180,143,0.12) 0%, transparent 55%)",
         }}
-      />{" "}
+      />
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div className="flex justify-center order-2 md:order-1">
-          <PerfumeBottle />
+          <PerfumeBottle
+            src="/images/img11.jpg"
+            alt="L'Écarlate bottle up close"
+          />
         </div>
+
         <div className="order-1 md:order-2">
           <span className="eyebrow">The Ritual</span>
           <h2 className="font-display font-light text-4xl md:text-5xl text-ivory mt-4 mb-10 leading-tight">
