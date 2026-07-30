@@ -38,19 +38,41 @@
 //   );
 // }
 
-
 import { motion } from "framer-motion";
 
 const INGREDIENTS = [
-  { name: "Bulgarian Rose", desc: "Hand-picked at dawn", image: "/images/ingredient-rose.jpg" },
-  { name: "Madagascar Vanilla", desc: "Cured for 9 months", image: "/images/ingredient-vanilla.jpg" },
-  { name: "Omani Frankincense", desc: "Sun-dried resin", image: "/images/ingredient-frankincense.jpg" },
-  { name: "Mysore Sandalwood", desc: "Aged 15 years", image: "/images/ingredient-sandalwood.jpg" },
+  {
+    name: "Bulgarian Rose",
+    desc: "Hand-picked at dawn",
+    image: "/images/Bulgarian Rose.jpg",
+  },
+  {
+    name: "Madagascar Vanilla",
+    desc: "Cured for 9 months",
+    image: "/images/Madagascar Vanilla.jpg",
+  },
+  {
+    name: "Omani Frankincense",
+    desc: "Sun-dried resin",
+    image: "/images/Omani Frankincense.jpg",
+  },
+  {
+    name: "Mysore Sandalwood",
+    desc: "Aged 15 years",
+    image: "/images/Mysore Sandalwood.jpg",
+  },
 ];
 
 function IngredientCard({ item, index }) {
   return (
-    <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.7, delay: index * 0.12 }} whileHover={{ y: -6 }} className="flex flex-col items-center text-center">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.4 }}
+      transition={{ duration: 0.7, delay: index * 0.12 }}
+      whileHover={{ y: -6 }}
+      className="flex flex-col items-center text-center"
+    >
       <div className="w-28 h-28 rounded-full relative mb-6">
         <div className="absolute inset-0 blur-2xl bg-gold/20 rounded-full scale-90 -z-10" />
 
@@ -63,7 +85,8 @@ function IngredientCard({ item, index }) {
           <div
             className="absolute inset-0 rounded-full"
             style={{
-              background: "linear-gradient(160deg, rgba(26,6,16,0.05) 0%, rgba(26,6,16,0.4) 100%)",
+              background:
+                "linear-gradient(160deg, rgba(26,6,16,0.05) 0%, rgba(26,6,16,0.4) 100%)",
               mixBlendMode: "multiply",
             }}
           />
